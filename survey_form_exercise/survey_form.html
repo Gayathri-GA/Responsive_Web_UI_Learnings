@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <main id="main">
+    <section id="formpage">
+      <h1 id="title">React Learning Feedback Form</h1>
+      <p id="description"><em>This form collects a short feedback on your react training.</em></p>
+      <form id="survey-form">
+        <div class="alignfield">
+          <label for="name" id="name-label">Name</label>
+          <input type="name" id="name" class="fieldstyle" placeholder="Enter your name" required />
+        </div>
+        <div class="alignfield">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" class="fieldstyle" placeholder="Enter your email" required />
+        </div>
+        <div class="alignfield">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input type="number" min=0 max=100 id="number" class="fieldstyle" placeholder="Enter your age" />
+        </div>
+        <div class="alignfield">
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select id="dropdown" name="currentPos" class="fieldstyle">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="alignfield">
+          <label for="">How likely is that you would recommend freeCodeCamp to a friend? </label>
+          <label><input type="radio" name="radio-buttons" value="1" />Definitely</label>
+          <label><input type="radio" name="radio-buttons" value="2" />Maybe</label>
+          <label><input type="radio" name="radio-buttons" value="3" />Not Sure</label>
+        </div>
+        <div class="alignfield">
+          <label for="prefer">Things that should be improved in the future(Check all that apply)</label>
+          <label class="labels"><input name="prefer" value="1" type="checkbox">Data Visualization</label>
+          <label class="labels"><input name="prefer" value="2" type="checkbox">Data Visualization</label>
+          <label class="labels"><input name="prefer" value="3" type="checkbox">Data Visualization</label>
+        </div>
+        <div class="alignfields">
+          <textarea id="subject" class="fieldstyle" name="subject" placeholder="Write your feedback here.."
+            style="height:50px;width: 500px;"></textarea>
+        </div>
+        <div>
+          <input type="submit" id="submit" value="Submit" style="text-align:center; margin: 10px 0px 10px 0px;;padding: 5px 35px 5px 35px;
+  border-radius: 5px;border: none;">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
