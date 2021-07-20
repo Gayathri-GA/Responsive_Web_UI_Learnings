@@ -20,31 +20,32 @@
           <input type="email" id="email" class="fieldstyle" placeholder="Enter your email" required />
         </div>
         <div class="alignfield">
-          <label for="number" id="number-label">Age (optional)</label>
-          <input type="number" min=0 max=100 id="number" class="fieldstyle" placeholder="Enter your age" />
+          <label for="number" id="number-label">Number of days taken to complete training(optional)</label>
+          <input type="number" min=0 max=100 id="number" class="fieldstyle"
+            placeholder="Enter number of days taken to complete training" />
         </div>
         <div class="alignfield">
-          <label for="dropdown">Which option best describes your current role?</label>
+          <label for="dropdown">Which option best describes your proficiency?</label>
           <select id="dropdown" name="currentPos" class="fieldstyle">
-            <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="full time job">Full Time Job</option>
-            <option value="full time learner">Full Time Learner</option>
-            <option value="prefer not to say">Prefer not to say</option>
-            <option value="other">Other</option>
+            <option disabled selected value>Select level of proficiency</option>
+            <option value="student">Design components with react, Only UI part</option>
+            <option value="full time job">React Ui development and state management techniques</option>
+            <option value="full time learner">UI, State Management, Backend with any one preffered option</option>
+            <option value="prefer not to say">Developed a mini project</option>
+            <option value="other">Developed a complete project using react</option>
           </select>
         </div>
         <div class="alignfield">
-          <label for="">How likely is that you would recommend freeCodeCamp to a friend? </label>
-          <label><input type="radio" name="radio-buttons" value="1" />Definitely</label>
-          <label><input type="radio" name="radio-buttons" value="2" />Maybe</label>
-          <label><input type="radio" name="radio-buttons" value="3" />Not Sure</label>
+          <label for="">How likely is you wish to take over react projects ? </label>
+          <label><input type="radio" name="radio-buttons" value="1" />Anytime</label>
+          <label><input type="radio" name="radio-buttons" value="2" />In one to two weeks</label>
+          <label><input type="radio" name="radio-buttons" value="3" />Need some more time</label>
         </div>
         <div class="alignfield">
-          <label for="prefer">Things that should be improved in the future(Check all that apply)</label>
-          <label class="labels"><input name="prefer" value="1" type="checkbox">Data Visualization</label>
-          <label class="labels"><input name="prefer" value="2" type="checkbox">Data Visualization</label>
-          <label class="labels"><input name="prefer" value="3" type="checkbox">Data Visualization</label>
+          <label for="prefer">Things you think toughest in learning phase</label>
+          <label class="labels"><input name="prefer" value="1" type="checkbox">Mentoring support</label>
+          <label class="labels"><input name="prefer" value="2" type="checkbox">Lack of resource</label>
+          <label class="labels"><input name="prefer" value="3" type="checkbox">Short Time Period</label>
         </div>
         <div class="alignfields">
           <textarea id="subject" class="fieldstyle" name="subject" placeholder="Write your feedback here.."
